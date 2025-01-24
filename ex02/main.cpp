@@ -27,3 +27,44 @@ int main()
 	}
 	return 0;
 }
+
+
+
+
+// Classe Person
+// class Person {
+// private:
+//     std::string name;
+//     int age;
+
+// public:
+//     Person(std::string n = "Unknown", int a = 0) : name(n), age(a) {}
+    
+//     Person(const Person& p) : name(p.name), age(p.age) {}
+
+//     Person& operator=(const Person& p) {
+//         if (this != &p) {
+//             name = p.name;
+//             age = p.age;
+//         }
+//         return *this;
+//     }
+
+//     void introduce() const {
+//         std::cout << "My name is " << name << " and I am " << age << " years old." << std::endl;
+//     }
+// };
+
+// int main() {
+//     Array<Person> people(3);
+
+//     people[0] = Person("Alice", 25);
+//     people[1] = Person("Bob", 30);
+//     people[2] = Person("Charlie", 35);
+
+//     for (size_t i = 0; i < people.size(); ++i) {
+//         people[i].introduce();
+//     }
+
+//     return 0;
+// }
