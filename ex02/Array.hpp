@@ -15,7 +15,6 @@ private:
 public:
 	Array() : data(NULL), length(0) {}
 	Array(size_t n) : data(new Tab[n]), length(n) {}
-	//copie les elements du tableau source dans un new tableau
 	Array(const Array<Tab>& C) : length(C.length)
 	{
 		data = new Tab[length];
@@ -28,7 +27,6 @@ public:
 	{
 		delete[] data;
 	}
-	//copie les elements du tableau src dans le tableau actuel
 	Array<Tab>& operator=(const Array<Tab>& C)
 	{
 		if (this != &C)
@@ -43,7 +41,6 @@ public:
 		}
 		return *this;
 	}
-	//retourne une reference a l'element du tableau a l'index specifie
 	Tab& operator[](size_t index)
 	{
 		if (index >= length)

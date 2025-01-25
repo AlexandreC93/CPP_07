@@ -4,7 +4,6 @@ int main()
 {
 	Array<int> emptyArray;
 	std::cout << "Empty array size: " << emptyArray.size() << std::endl;
-	// Creation d'un tableau d'une taille specifique
 	size_t size = 5;
 	Array<int> specificSizeArray(size);
 	std::cout << "Specific size array size: " << specificSizeArray.size() << std::endl;
@@ -17,9 +16,8 @@ int main()
 			std::cout << "Element at index " << i << ": " << specificSizeArray[i] << std::endl;
 		}
 
-		// Tentative d'acces a un element en dehors des limites
 		std::cout << "Attempting to access out-of-range element..." << std::endl;
-		specificSizeArray[size] = 10; // Doit lancer une exception
+		specificSizeArray[size] = 10;
 	}
 	catch (const std::exception& e)
 	{
@@ -32,6 +30,8 @@ int main()
 
 
 // Classe Person
+
+
 // class Person {
 // private:
 //     std::string name;
